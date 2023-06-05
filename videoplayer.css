@@ -1,0 +1,135 @@
+
+
+
+/* Main Container */
+
+.Video {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 4rem;
+  }
+  
+  /* Video */
+  
+  .video {
+   
+    margin-left: 2rem;
+    width: 70vw;
+    height: 70vh;
+    aspect-ratio: 16/9;
+  }
+  
+  /* Controls */
+  
+  .controlsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: -38vw;
+    padding: 0 30px;
+    z-index: 20;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 18rem;
+    margin: auto;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .controlsIcon {
+    width: 40px;
+    background: #fff;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  
+  .controlsIcon--small {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  
+  /* The time controls section */
+  
+  .timecontrols {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.1rem;
+    margin-left: 2.2vw;
+    height: 5vh;
+    width: 124.7vh;
+    background: #262626;
+    cursor: pointer;
+  }
+  .controlsIcon--Play-pause {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+   margin-left: 1rem;
+   margin-right: 1rem;
+    background: #6c6b6b;
+  }
+  
+  .time_progressbarContainer {
+    background-color: #cdbebe;
+    border-radius: 15px;
+    width: 50vw;
+    height: 5px;
+    z-index: 300;
+    position: relative;
+    margin: 10 0px;
+  }
+  
+  .time_progressBar {
+    border-radius: 15px;
+    background-color: rgb(216, 213, 217);
+    color: aqua;
+    height: 100%;
+  }
+  
+  .controlsTime {
+    color: white;
+    margin-top: 1rem; 
+    margin-left: .1rem;
+   justify-content: flex-start;
+  }
+ .volum-up-down .type{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #000;
+  color: #fff;
+ }
+
+
+@media screen and (max-width:768px){
+  .Video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .controlsContainer{
+    margin-top: 100px;
+  }
+  .timecontrols{
+    top: 15rem;
+    
+  }
+}
